@@ -6,9 +6,14 @@ class String
     processed_content == processed_content.reverse
   end
 
+  # Returns letters of a string
+  def letters
+    # self.scan(/\w+/).join
+  end
+
   private
     def processed_content
-      self.downcase
+      self.to_s.downcase
     end
 
 end

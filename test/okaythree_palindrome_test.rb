@@ -14,8 +14,24 @@ class OkaythreePalindromeTest < Minitest::Test
     assert "RaceCar".palindrome?
   end
 
+  def test_integer_palindrome
+    assert "12321".palindrome?
+  end
+
+  def test_non_integer_palindrome
+    refute "12334".palindrome?
+  end
+
   def test_palindrome_with_punctuation
-    skip
+    assert "Madam, I'm Adam".palindrome?
+  end
+
+  def test_letters_using_equal
+    assert "MadamImAdam" == "Madam, I'm Adam".letters
+  end
+
+  def test_letters
+    assert_equal "MadamImAdam", "Madam, I'm Adam".letters
   end
 
 end
