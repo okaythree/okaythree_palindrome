@@ -26,7 +26,7 @@ class OkaythreePalindromeTest < Minitest::Test
     assert "Madam, I'm Adam".palindrome?
   end
 
-  def test_letters_using_equal
+  def test_letters_using_equals
     assert "MadamImAdam" == "Madam, I'm Adam".letters
   end
 

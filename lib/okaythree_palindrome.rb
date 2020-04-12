@@ -8,7 +8,7 @@ class String
 
   # Returns letters of a string
   def letters
-    # self.scan(/\w+/).join
+    self.scan(/\w+/).join
   end
 
   private
